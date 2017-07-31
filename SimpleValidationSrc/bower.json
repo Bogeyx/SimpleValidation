@@ -1,19 +1,18 @@
 {
-  "name": "SimpleBox",
-  "homepage": "https://github.com/Bogeyx/SimpleBox",
+  "name": "SimpleValidation",
+  "homepage": "https://github.com/Bogeyx/SimpleValidation",
   "authors": [
     "Maximilian Taeuffenbach"
   ],
-  "description": "Super lightweight Lightbox and Gallery without jquery",
+  "description": "Super lightweight Validation for .Net Core without Jquery",
   "main": "",
   "version": "1.1.0",
   "keywords": [
-    "Lightbox",
-    "Gallery",
-    "lightweight",
+    "Lightweight",
+    "Validation",
+    ".Net Core",
     "feather",
-    "no",
-    "Jquery"
+    "no Jquery"
   ],
   "license": "MIT",
   "ignore": [
@@ -22,7 +21,7 @@
     "bower_components",
     "test",
     "tests",
-    "SimpleBoxSrc",
-    "../SimpleBoxSrc"
+    "SimpleValidationSrc",
+    "../SimpleValidationSrc"
   ]
 }
