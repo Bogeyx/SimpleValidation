@@ -1,0 +1,22 @@
+﻿[
+  {
+    "outputFileName": "../dist/simpleValidation.js",
+    "inputFiles": [
+      "Typescript/validation.js"
+    ],
+    "minify": {
+      "enabled": false,
+      "renameLocals": false
+    }
+  },
+  {
+    "outputFileName": "../dist/simpleValidation.min.js",
+    "inputFiles": [
+      "Typescript/validation.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    }
+  }
+]
