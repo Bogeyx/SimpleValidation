@@ -36,6 +36,28 @@ class Validation {
         }
     }
 
+    /// Ermöglicht das binden über Events
+    private checkOverEvent(e: Event) {
+        let item = (e.target ? e.target : e.currentTarget) as HTMLInputElement;
+        let form: HTMLFormElement;
+        let tmp: HTMLElement = item;
+
+        while (tmp.parentElement)
+        {
+            if (tmp.parentElement instanceof HTMLFormElement) {
+                form = tmp.parentElement;
+                break;
+            } else {
+                tmp = tmp.parentElement;
+            }            
+        }
+
+        if (item && form) {
+            validation.checkItem(item, form);
+        }
+    }
+
+
     /// Validiert ein Element des Forms
     private checkItem(item: HTMLInputElement, form: HTMLFormElement) {
         let message: string = "7";  
@@ -165,16 +187,14 @@ class Validation {
         let errorSpan = form.querySelector('[data-valmsg-for="' + item.name + '"') as HTMLSpanElement;
         if (message !== "7") {
             item.setCustomValidity(message);
-            if (!item.onkeyup) {
-                item.onkeyup = (e) => {
-                    this.checkItem(item, form)
-                }
+            if (item.dataset.keyupSet !== "done") {
+                item.dataset.keyupSet = "done";
+                item.addEventListener("keyup", this.checkOverEvent, false);
             }
 
-            if (!item.onchange) {
-                item.onchange = (e) => {
-                    this.checkItem(item, form)
-                }
+            if (item.dataset.changeSet !== "done") {
+                item.dataset.changeSet = "done";
+                item.addEventListener("change", this.checkOverEvent, false);
             }
 
             if (errorSpan) {
