@@ -10,7 +10,9 @@ class Validation {
         for (var i = 0; i < forms.length; i++) {
             let form = (forms[i] as HTMLFormElement);
             form.onsubmit = (e) => {
-                this.validate(form, e);
+                if (!document.activeElement || !document.activeElement.getAttribute("formnovalidate")) {
+                    this.validate(form, e);
+                }
             }
         }
     }

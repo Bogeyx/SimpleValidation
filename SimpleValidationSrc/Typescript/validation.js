@@ -9,7 +9,9 @@ var Validation = (function () {
         var _loop_1 = function () {
             var form = forms[i];
             form.onsubmit = function (e) {
-                _this.validate(form, e);
+                if (!document.activeElement || !document.activeElement.getAttribute("formnovalidate")) {
+                    _this.validate(form, e);
+                }
             };
         };
         for (var i = 0; i < forms.length; i++) {
