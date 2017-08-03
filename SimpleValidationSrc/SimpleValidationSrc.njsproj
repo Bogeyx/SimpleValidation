@@ -36,6 +36,9 @@
     <Content Include="bower.json" />
     <Content Include="bundleconfig.json" />
     <Content Include="README.md" />
+    <Content Include="Test.html">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="tsconfig.json" />
   </ItemGroup>
   <ItemGroup>

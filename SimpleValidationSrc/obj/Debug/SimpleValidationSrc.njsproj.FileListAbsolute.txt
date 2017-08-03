@@ -1,0 +1,2 @@
+C:\Users\tmaximilian\Source\Repos\SimpleValidation\SimpleValidationSrc\obj\Debug\SimpleValidationSrc.njsprojResolveAssemblyReference.cache
+C:\Users\tmaximilian\Source\Repos\SimpleValidation\SimpleValidationSrc\bin\Microsoft.NodejsTools.WebRole.dll

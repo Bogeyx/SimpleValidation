@@ -1,0 +1,230 @@
+﻿<html lang="de">
+<head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestellung | Lumion | Schnelles Rendern für Architekten</title>
+    <link type="text/css" href="http://lumion3d.de/dist/site.min.css?v=8E6B99EA" rel="stylesheet"/>    
+</head>
+<body>
+    <div class="body-content">
+        <div class="block-alternate">
+            <div class="container content-pad">
+                <div class="row">
+                    <form id="orderForm" enctype="multipart/form-data" method="post" action="/api%2FInitOrder" novalidate="novalidate">
+                        <input type="hidden" data-val="true" data-val-required="The Number field is required." id="ProductInfo_Number" name="ProductInfo.Number" value="LUM7NORM">
+
+                        <div class="col-xs-12 col-sm-8">
+                            <h2>Lumion Anforderungsformular</h2>
+
+
+                            <select data-val="true" data-val-range="Das Feld Geschlecht wird benötigt." data-val-range-max="7" data-val-range-min="0" data-val-required="Das Feld Geschlecht wird benötigt." id="Sex" name="Sex" class="empty">
+                                <option disabled="" selected="" value="">*Geschlecht</option>
+                                <option value="0">Herr</option>
+                                <option value="1">Frau</option>
+                            </select>
+                            <span class="field-validation-valid" data-valmsg-for="Sex" data-valmsg-replace="true"></span>
+
+                            <input type="text" data-val="true" data-val-maxlength="Eingabe zu lang" data-val-maxlength-max="50" data-val-required="Das Feld Vorname wird benötigt." id="Vorname" name="Vorname" placeholder="*Vorname" value="">
+                            <span class="field-validation-valid" data-valmsg-for="Vorname" data-valmsg-replace="true"></span>
+
+                            <input type="text" data-val="true" data-val-maxlength="Eingabe zu lang" data-val-maxlength-max="50" data-val-required="Das Feld Nachname wird benötigt." id="Nachname" name="Nachname" placeholder="*Nachname" value="">
+                            <span class="field-validation-valid" data-valmsg-for="Nachname" data-valmsg-replace="true"></span>
+
+                            <input type="text" data-val="true" data-val-maxlength="Eingabe zu lang" data-val-maxlength-max="50" data-val-required="Das Feld Firma wird benötigt." id="Firma" name="Firma" placeholder="*Firma" value="">
+                            <span class="field-validation-valid" data-valmsg-for="Firma" data-valmsg-replace="true"></span>
+
+                            <input type="text" data-val="true" data-val-maxlength="Eingabe zu lang" data-val-maxlength-max="50" data-val-required="Das Feld Beruf wird benötigt." id="Beruf" name="Beruf" placeholder="*Beruf" value="">
+                            <span class="field-validation-valid" data-valmsg-for="Beruf" data-valmsg-replace="true"></span>
+
+                            <input type="text" data-val="true" data-val-maxlength="Eingabe zu lang" data-val-maxlength-max="50" data-val-required="Das Feld Straße wird benötigt." id="Stra_e" name="Straße" placeholder="*Straße" value="">
+                            <span class="field-validation-valid" data-valmsg-for="Straße" data-valmsg-replace="true"></span>
+
+                            <input type="text" data-val="true" data-val-maxlength="Eingabe zu lang" data-val-maxlength-max="20" data-val-required="Das Feld Nr. wird benötigt." id="Nr" name="Nr" placeholder="*Nr." value="">
+                            <span class="field-validation-valid" data-valmsg-for="Nr" data-valmsg-replace="true"></span>
+
+                            <input type="text" data-val="true" data-val-maxlength="Eingabe zu lang" data-val-maxlength-max="20" data-val-required="Das Feld PLZ wird benötigt." id="PLZ" name="PLZ" placeholder="*PLZ" value="">
+                            <span class="field-validation-valid" data-valmsg-for="PLZ" data-valmsg-replace="true"></span>
+
+                            <input type="text" data-val="true" data-val-maxlength="Eingabe zu lang" data-val-maxlength-max="50" data-val-required="Das Feld Ort wird benötigt." id="Ort" name="Ort" placeholder="*Ort" value="">
+                            <span class="field-validation-valid" data-valmsg-for="Ort" data-valmsg-replace="true"></span>
+
+                            <select data-val="true" data-val-required="Das Feld Land wird benötigt." id="Land" name="Land">
+                                <option value="DE" selected="selected">Deutschland</option>
+                                <option value="AT">Österreich</option>
+                                <option value="CH">Schweiz</option>
+                                <option value="IT">Italien</option>
+                                <option value="LU">Luxemburg</option>
+                                <option value="LI">Liechtenstein</option>
+                            </select>
+                            <span class="field-validation-valid" data-valmsg-for="Land" data-valmsg-replace="true"></span>
+
+                            <select class="filtered empty" data-val="true" data-val-required="Das Feld Region wird benötigt." id="Region" name="Region">
+                                <option data-c="ALL" disabled="" selected="" value="">*Region</option>
+                                <option data-c="CH" value="65" style="display: none;">Aargau</option>
+                                <option data-c="IT" value="2" style="display: none;">Abruzzen</option>
+                                <option data-c="IT" value="8" style="display: none;">Aostatal</option>
+                                <option data-c="CH" value="64" style="display: none;">Appenzell Ausserrhoden</option>
+                                <option data-c="CH" value="63" style="display: none;">Appenzell Innerhoden</option>
+                                <option data-c="IT" value="17" style="display: none;">Apulien</option>
+                                <option data-c="DE" value="1">Baden-Württemberg</option>
+                                <option data-c="CH" value="62" style="display: none;">Basel-Landschaft</option>
+                                <option data-c="CH" value="61" style="display: none;">Basel-Stadt</option>
+                                <option data-c="IT" value="18" style="display: none;">Basilikata</option>
+                                <option data-c="DE" value="52">Bayern</option>
+                                <option data-c="DE" value="51">Berlin</option>
+                                <option data-c="CH" value="60" style="display: none;">Bern</option>
+                                <option data-c="DE" value="50">Brandenburg</option>
+                                <option data-c="DE" value="49">Bremen</option>
+                                <option data-c="AT" value="54" style="display: none;">Burgenland</option>
+                                <option data-c="IT" value="19" style="display: none;">Emilia-Romagna</option>
+                                <option data-c="CH" value="59" style="display: none;">Freiburg</option>
+                                <option data-c="IT" value="34" style="display: none;">Friaul-Julisch Venetien</option>
+                                <option data-c="CH" value="58" style="display: none;">Genf</option>
+                                <option data-c="CH" value="57" style="display: none;">Glarus</option>
+                                <option data-c="CH" value="38" style="display: none;">Graubünden</option>
+                                <option data-c="DE" value="48">Hamburg</option>
+                                <option data-c="DE" value="47">Hessen</option>
+                                <option data-c="CH" value="72" style="display: none;">Jura</option>
+                                <option data-c="IT" value="33" style="display: none;">Kalabrien</option>
+                                <option data-c="IT" value="32" style="display: none;">Kampanien</option>
+                                <option data-c="AT" value="55" style="display: none;">Kärnten</option>
+                                <option data-c="IT" value="31" style="display: none;">Latium</option>
+                                <option data-c="LI" value="73" style="display: none;">Lichtenstein</option>
+                                <option data-c="IT" value="30" style="display: none;">Ligurien</option>
+                                <option data-c="IT" value="29" style="display: none;">Lombardei</option>
+                                <option data-c="LU" value="36" style="display: none;">Luxemburg</option>
+                                <option data-c="CH" value="37" style="display: none;">Luzern</option>
+                                <option data-c="IT" value="28" style="display: none;">Marken</option>
+                                <option data-c="DE" value="53">Mecklenburg-Vorpommern</option>
+                                <option data-c="IT" value="27" style="display: none;">Molise</option>
+                                <option data-c="CH" value="35" style="display: none;">Neuenburg</option>
+                                <option data-c="CH" value="15" style="display: none;">Nidwalden</option>
+                                <option data-c="AT" value="56" style="display: none;">Niederösterreich</option>
+                                <option data-c="DE" value="46">Niedersachsen</option>
+                                <option data-c="DE" value="44">Nordrhein-Westfalen</option>
+                                <option data-c="AT" value="71" style="display: none;">Oberösterreich</option>
+                                <option data-c="CH" value="14" style="display: none;">Obwalden</option>
+                                <option data-c="IT" value="26" style="display: none;">Piemont</option>
+                                <option data-c="DE" value="43">Rheinland-Pfalz</option>
+                                <option data-c="DE" value="42">Saarland</option>
+                                <option data-c="DE" value="41">Sachsen</option>
+                                <option data-c="DE" value="40">Sachsen-Anhalt</option>
+                                <option data-c="AT" value="70" style="display: none;">Salzburg</option>
+                                <option data-c="IT" value="25" style="display: none;">Sardinien</option>
+                                <option data-c="CH" value="13" style="display: none;">Schaffhausen</option>
+                                <option data-c="DE" value="39">Schleswig-Holstein</option>
+                                <option data-c="CH" value="12" style="display: none;">Schwyz</option>
+                                <option data-c="IT" value="24" style="display: none;">Sizilien</option>
+                                <option data-c="CH" value="11" style="display: none;">Solothurn</option>
+                                <option data-c="CH" value="10" style="display: none;">St. Gallen</option>
+                                <option data-c="AT" value="69" style="display: none;">Steiermark</option>
+                                <option data-c="CH" value="16" style="display: none;">Tessin</option>
+                                <option data-c="CH" value="9" style="display: none;">Thurgau</option>
+                                <option data-c="DE" value="45">Thüringen</option>
+                                <option data-c="AT" value="68" style="display: none;">Tirol</option>
+                                <option data-c="IT" value="23" style="display: none;">Toskana</option>
+                                <option data-c="IT" value="22" style="display: none;">Trentino-Südtirol</option>
+                                <option data-c="IT" value="21" style="display: none;">Umbrien</option>
+                                <option data-c="CH" value="7" style="display: none;">Uri</option>
+                                <option data-c="IT" value="20" style="display: none;">Venetien</option>
+                                <option data-c="AT" value="67" style="display: none;">Vorarlberg</option>
+                                <option data-c="CH" value="6" style="display: none;">Waadt</option>
+                                <option data-c="CH" value="5" style="display: none;">Wallis</option>
+                                <option data-c="AT" value="66" style="display: none;">Wien</option>
+                                <option data-c="CH" value="4" style="display: none;">Zug</option>
+                                <option data-c="CH" value="3" style="display: none;">Zürich</option>
+                            </select>
+                            <span class="field-validation-valid" data-valmsg-for="Region" data-valmsg-replace="true"></span>
+
+                            <input type="tel" data-val="true" data-val-maxlength="Eingabe zu lang" data-val-maxlength-max="30" data-val-phone="Ungültige Telefonnummer" data-val-required="Das Feld Tel. wird benötigt." id="Telefon" name="Telefon" placeholder="*Tel." value="">
+                            <span class="field-validation-valid" data-valmsg-for="Telefon" data-valmsg-replace="true"></span>
+
+                            <input type="email" data-val="true" data-val-email="Ungültiges E-Mail Format" data-val-maxlength="Eingabe zu lang" data-val-maxlength-max="50" data-val-required="Das Feld E-Mail wird benötigt." id="Email" name="Email" placeholder="*E-Mail" value="">
+                            <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+
+                            <input type="url" data-val="true" data-val-maxlength="Eingabe zu lang" data-val-maxlength-max="50" data-val-url="Ungültige Url" id="Homepage" name="Homepage" placeholder="Homepage" value="">
+                            <span class="field-validation-valid" data-valmsg-for="Homepage" data-valmsg-replace="true"></span>
+
+                            <br>
+                            <label>
+                                <input data-val="true" data-val-required="Dieser Hacken muss gesetzt sein" id="AGB" name="AGB" required="" type="checkbox" value="true" aria-required="true">
+                                Ich habe die <a target="_blank" rel="noopener" href="/agb">Lizenzbedingungen</a> zur Kenntnis genommen.
+                                <span class="field-validation-valid" data-valmsg-for="AGB" data-valmsg-replace="true"></span>
+                            </label>
+                            <br>
+
+                            <label>
+                                <input data-val="true" data-val-required="Dieser Hacken muss gesetzt sein" id="DataPrivacy" name="DataPrivacy" required="" type="checkbox" value="true" aria-required="true">
+                                Ich habe die <a target="_blank" rel="noopener" href="/datenschutz">Datenschutzbestimmungen</a> zur Kenntnis genommen
+                                <span class="field-validation-valid" data-valmsg-for="DataPrivacy" data-valmsg-replace="true"></span>
+                            </label>
+                            <br>
+
+                            <label>
+                                <input data-val="true" data-val-required="Dieser Hacken muss gesetzt sein" id="CancelPolicy" name="CancelPolicy" required="" type="checkbox" value="true" aria-required="true">
+                                Ich habe die <a target="_blank" rel="noopener" href="/widerrufsbelehrung">Widerrufsbelehrung</a> zur Kenntnis genommen
+                                <span class="field-validation-valid" data-valmsg-for="CancelPolicy" data-valmsg-replace="true"></span>
+                            </label>
+
+                            <input type="hidden" data-val="true" data-val-required="Es muss ein Produkt ausgewählt sein" id="ProductId" name="ProductId" value="65">
+                            <br>
+                            <button id="notPaypalOption" onclick="my.checkPaypal(event)">Jetzt kostenpflichtig bestellen</button>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-4">
+                            <h2>&nbsp;</h2>
+                            <div class="background-accent" style="padding:20px">
+                                <h2>Zahlungsart</h2>
+
+                                <fieldset class="iconRadios">
+                                    <p class="answer">
+                                        <input type="radio" value="Vorkasse" id="Vorkasse" data-val="true" data-val-required="Es muss eine Zahlungsart ausgewählt werden." name="BillingData.BillingType">
+                                        <label for="Vorkasse">
+                                            Vorkasse
+                                        </label>
+                                    </p>
+
+                                    <p class="answer">
+                                        <input type="radio" value="Rechnung" id="Rechnung" name="BillingData.BillingType">
+                                        <label for="Rechnung">
+                                            Rechnung
+                                        </label>
+                                    </p>
+
+                                    <p class="answer">
+                                        <input type="radio" value="Lastschrift" id="Lastschrift" name="BillingData.BillingType">
+                                        <label for="Lastschrift">
+                                            Lastschrift
+                                        </label>
+                                    </p>
+
+                                </fieldset>
+
+                                <div id="lastschriftOption" hidden="">
+                                    <br>
+                                    <input type="text" data-val="true" data-val-required="IBAN" id="BillingData_IBAN" name="BillingData.IBAN" placeholder="*IBAN" value="">
+                                    <span class="field-validation-valid" data-valmsg-for="BillingData.IBAN" data-valmsg-replace="true"></span>
+
+                                    <input type="text" data-val="true" data-val-required="BIC" id="BillingData_BIC" name="BillingData.BIC" placeholder="*BIC" value="">
+                                    <span class="field-validation-valid" data-valmsg-for="BillingData.BIC" data-valmsg-replace="true"></span>
+
+                                    <input type="text" data-val="true" data-val-required="Das Feld Inhaber wird benötigt." id="BillingData_Owner" name="BillingData.Owner" placeholder="*Inhaber" value="">
+                                    <span class="field-validation-valid" data-valmsg-for="BillingData.Owner" data-valmsg-replace="true"></span>
+
+                                    <input type="text" data-val="true" data-val-required="Das Feld Institution wird benötigt." id="BillingData_Institution" name="BillingData.Institution" placeholder="*Institution" value="">
+                                    <span class="field-validation-valid" data-valmsg-for="BillingData.Institution" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <span class="field-validation-valid" data-valmsg-for="BillingData.BillingType" data-valmsg-replace="true"></span>
+
+                        </div>
+                        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8O-rr2wyhPVKnwxGrCe0Ek-_iR9JsY5eLGqMY1kg37_MQmf2uc0OLeBnSD0TAXv3lR0gY9Qp1uqZPRY2G-pDqkk_JNMfOeqo0QmkMlrup8lylhV7UR7SsCF651XLvjcOYXQGK-Y71rmwBUlpnmYnsGI"><input name="AGB" type="hidden" value="false"><input name="DataPrivacy" type="hidden" value="false"><input name="CancelPolicy" type="hidden" value="false">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../dist/simpleValidation.js"></script>
+</body>
+</html>
