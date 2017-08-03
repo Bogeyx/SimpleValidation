@@ -1,2 +1,4 @@
 C:\Users\tmaximilian\Source\Repos\SimpleValidation\SimpleValidationSrc\Typescript\validation.js
 C:\Users\tmaximilian\Source\Repos\SimpleValidation\SimpleValidationSrc\Typescript\validation.js.map
+C:\Users\Maxi\Source\Repos\SimpleValidation\SimpleValidationSrc\Typescript\validation.js
+C:\Users\Maxi\Source\Repos\SimpleValidation\SimpleValidationSrc\Typescript\validation.js.map
