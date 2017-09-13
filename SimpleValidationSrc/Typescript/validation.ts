@@ -2,6 +2,23 @@
 var sel = (selector: string) => document.querySelector(selector) as HTMLElement;
 var selAll = (selector: string) => document.querySelectorAll(selector) as NodeListOf<HTMLElement>;
 
+// Eine ForEach Erweiterung für alle Enumerables
+function forEach(callback: (index: number, value: Object) => void, scope?) {
+    let _this: Array<any> = this ? this : scope;
+    for (var i = 0; i < _this.length; i++) {
+        callback.call(scope, i, _this[i]); // passes back stuff we need
+    }
+};
+
+// Direkte ForEach Erweiterung für NodeList
+interface NodeList {
+    forEach(callback: (index: number, value: Node) => void, scope?): void;
+}
+interface NodeListOf<TNode extends Node> {
+    forEach(callback: (index: number, value: TNode) => void, scope?): void;
+}
+(<any>NodeList.prototype).forEach = forEach;
+
 /// Das Validierungs-Plugin
 class Validation {
     constructor() {

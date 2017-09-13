@@ -1,6 +1,15 @@
 /// Shortcuts
 var sel = function (selector) { return document.querySelector(selector); };
 var selAll = function (selector) { return document.querySelectorAll(selector); };
+// Eine ForEach Erweiterung für alle Enumerables
+function forEach(callback, scope) {
+    var _this = this ? this : scope;
+    for (var i = 0; i < _this.length; i++) {
+        callback.call(scope, i, _this[i]); // passes back stuff we need
+    }
+}
+;
+NodeList.prototype.forEach = forEach;
 /// Das Validierungs-Plugin
 var Validation = (function () {
     function Validation() {
