@@ -100,8 +100,8 @@ var Validation = (function () {
                 }
                 // Range
                 if (item.dataset.valRange) {
-                    if (value.length <= parseInt(item.dataset.valRangeMin)
-                        || value.length >= parseInt(item.dataset.valRangeMax)) {
+                    if (parseFloat(value.replace(',', '.')) < parseFloat(item.dataset.valRangeMin.replace(',', '.'))
+                        || parseFloat(value.replace(',', '.')) > parseFloat(item.dataset.valRangeMax.replace(',', '.'))) {
                         message = item.dataset.valRange;
                     }
                 }
