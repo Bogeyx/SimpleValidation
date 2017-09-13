@@ -100,8 +100,8 @@ var Validation = (function () {
                 }
                 // Range
                 if (item.dataset.valRange) {
-                    if (value.length < parseInt(item.dataset.valRangeMin)
-                        || value.length > parseInt(item.dataset.valRangeMax)) {
+                    if (value.length <= parseInt(item.dataset.valRangeMin)
+                        || value.length >= parseInt(item.dataset.valRangeMax)) {
                         message = item.dataset.valRange;
                     }
                 }

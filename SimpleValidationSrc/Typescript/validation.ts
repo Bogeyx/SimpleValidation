@@ -113,8 +113,8 @@ class Validation {
 
                 // Range
                 if (item.dataset.valRange) {
-                    if ((value as string).length < parseInt(item.dataset.valRangeMin)
-                        || (value as string).length > parseInt(item.dataset.valRangeMax)) {
+                    if ((value as string).length <= parseInt(item.dataset.valRangeMin)
+                        || (value as string).length >= parseInt(item.dataset.valRangeMax)) {
                         message = item.dataset.valRange;
                     }
                 }
